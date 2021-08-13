@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Mik's Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav">
+        <div class="change"></div>
+        <div class="change change-top"></div>
+    </div>
+    <div class="room">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box top">
+                <p id="sign-up">Sign Up</p>
+                <form class="form">
+                    <input id="full-name" class="input" type="text" placeholder="full name ..">
+                    <span class="errors" id="name-error">*write the name correctly</span>
+                    <input id="mail" class="input" type="text" placeholder="e-mail address ..">
+                    <span id="mail-error" class="errors">*write the mail-id correctly</span>
+                    <input id="mobile" class="input" type="text" placeholder="mobile number ..">
+                    <span id="mobile-error" class="errors">*write the number correctly</span>
+                    <input id="password" class="input" type="password" placeholder="password ..">
+                    <span id="password-error"  class="errors">*write a valid password</span>
+                    <input id="confirm" class="input" type="password" placeholder="confirm password ..">
+                    <span id="confirm-error"  class="errors">*passwords don't match</span>
+                    <label class="check">
+                        <span class="change"></span>
+                        <span onclick="check()" class="change check-top"></span>
+                        <p>Terms and Conditions*</p>
+                    </label>
+                    <button onclick="validation()" type="button" class="register">Register</button>
+                    <p id="submit-error">*fill everything</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
